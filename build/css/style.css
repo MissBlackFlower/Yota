@@ -40,7 +40,7 @@ body { font-family: "Open Sans", sans-serif; }
 .header__menu li { display: inline-block; }
 .header__menu li a { display: block; float: left; text-transform: uppercase; text-decoration: none; color: #fff; }
 
-.carusel { overflow: hidden; width: 100%; padding: 3% 10% 3% 8%; background: url(../img/bg_carusel.png) center no-repeat; background-size: contain; }
+.carusel { overflow: hidden; width: 100%; padding: 3% 10% 3% 8%; background: #081319; background-image: url(../img/grad.png); background-repeat: no-repeat; background-position: center center; background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #213542), color-stop(16%, #213542), color-stop(59%, #081319), color-stop(100%, #081319)); background: -webkit-radial-gradient(center, ellipse cover, #213542 0%, #213542 16%, #081319 59%, #081319 100%); background: -webkit-radial-gradient(center, ellipse, #213542 0%, #213542 16%, #081319 59%, #081319 100%); background: radial-gradient(ellipse at center, #213542 0%, #213542 16%, #081319 59%, #081319 100%); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
