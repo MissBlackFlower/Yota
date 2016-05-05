@@ -12,7 +12,7 @@ gulp.task('font', function(){
     // .pipe(svgmin())
     .pipe(iconfont({
       fontName: fontname,
-      // appendUnicode: true,
+      appendUnicode: true,
       formats: ['ttf', 'eot', 'woff', 'woff2'],
       normalize: true,
       fontHeight: 1001,
