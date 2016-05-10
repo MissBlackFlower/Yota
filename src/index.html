@@ -9,7 +9,12 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
+	<link rel="stylesheet" media="all" href="css/minimalist.css" >
 	<script src="js/app.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="js/flowplayer.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 <div class="header">
@@ -55,18 +60,54 @@
 	</div>
 </div>
 <div class="two-sides">
-	<h1 class="two-sides__title"><b>Yota</b>phone 2</h1>
-	<h2 class="two-sides__subtitle">Телефон с двух сторон</h2>
+	<div class="two-sides__titles">
+		<h1 class="two-sides__title"><b>Yota</b>phone 2</h1>
+		<h2 class="two-sides__subtitle">Телефон с двух сторон</h2>
+	</div>
+	<div class="two-sides__text">
+		<ul>
+			<li>Первый в мире телефон с двух сторон. <br>Понравится тем кто любит читать и не хочет беспокоиться о заряде батареи. Два экрана, один из которых всегда работает. Вся вселенная андроидных прилоежний на обоих экранах</li>
+		</ul>
+	</div>
+	<div class="two-sides__conteiner">
 	<div class="two-sides__textbox">
-		<div class="symbol">
-			<i>&#10077;</i>
+		<h5>Покажет самое важное</h5>
+		<ul>
+			<li>Любые уведомления на втором экране доступны с одного взгляда</li>
+		</ul>
+	</div>
+	<div class="two-sides__textbox">
+		<h5>РАБОТАЕТ ПО ДНЯМ,<br> А НЕ ПО ЧАСАМ</h5>
+		<ul>
+			<li>Режим YotaEnergy экономит батарею, сохраняя основные функции телефона</li>
+		</ul>
+	</div>
+	<div class="two-sides__textbox">
+		<h5>ПРИДАЁТ ВКУС ЧТЕНИЮ</h5>
+		<ul>
+			<li>100 часов комфортного чтения на втором экране без вреда для глаз</li>
+		</ul>
+	</div>
+	<div class="two-sides__textbox">
+		<h5>НОСИТ ЛИЧНЫЙ ХАРАКТЕР</h5>
+		<ul>
+			<li>Установите любое изображение или слайд-шоу на второй экран. Делитесь настроением с окружающими!</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<div class="video">
+	<div class="video__conteiner">
+		<div class="flowplayer">
+			<video>
+			<source src="img/yota.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			<iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/ToX0Cnx3QHc?controls=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&autohide=0&color=white&iv_load_policy=3&theme=light" frameborder="0" allowfullscreen></iframe>
+			</video>
 		</div>
-		<h6></h6>
-		<p></p>
 	</div>
 </div>
 <div class="content">
-	<video url="https://www.youtube.com/watch?v=ToX0Cnx3QHc" autoplay poster="posterimage.jpg">
+	<video url="https://www.youtube.com/watch?v=ToX0Cnx3QHc" poster="posterimage.jpg">
 	</video>
 </div>
 <div class="footer">
