@@ -42,7 +42,7 @@
 .main
   overflow: hidden
   width: 100%
-  padding: 4.5% 1% 3.5% 14.2%
+  padding: 4.5% 1% 3.5% 20%
   background: rgba(8,19,25,1)
   background-image: url(../img/grad.png)
   background-repeat: no-repeat
@@ -126,7 +126,7 @@
   overflow: hidden
   width: 100%
   clear: both
-  padding: 2.5% 14% 3.5% 14.2%
+  padding: 2.5% 14% 6% 25%
   background: #fff
   h5
     text-transform: uppercase
@@ -138,7 +138,6 @@
   &__titles
     overflow: hidden
     width: 40%
-    margin-left: 3%
     float: left
     clear: left
   &__title
@@ -166,7 +165,7 @@
   &__textbox
     float: left
     width: 18%
-    margin-left: 3%
+    margin-right: 3%
     font-size: 1em
 
 .video
@@ -176,3 +175,248 @@
     margin: auto
     width: 80%
     max-width: 1600px
+#video
+  height: 560px
+  max-height: 560px
+  overflow: none
+  margin: auto
+.forbes
+  overflow: hidden
+  width: 100%
+  clear: both
+  padding: 2.5% 14% 3.5% 25%
+  background: #eee
+  h5
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 1em
+    padding-bottom: 3%
+  li
+    list-style-image: url(../img/symbol.png)
+  &__title
+    margin-bottom: 2%
+    text-transform: uppercase
+    font-size: 1.1em
+  &__text
+    float: left
+    width: 70%
+    clear: right
+    font-size: 2.7em
+    font-weight: 300
+    line-height: 1.2em
+  &__conteiner
+    width: 100%
+    float: left
+    margin-top: 4%
+  &__textbox
+    float: left
+    width: 18%
+    margin-right: 5%
+    font-size: 1em
+.yotapanel
+  overflow: hidden
+  width: 100%
+  clear: both
+  padding: 3% 14% 3.5% 25%
+  background: #fff
+  img
+    display: block
+    float: right
+    clear: right
+  &__conteiner
+    overflow: inherit
+    width: 35%
+    float: left
+    clear: left
+  &__title
+    font-size: 2.6em
+    font-weight: 300
+    margin-bottom: 5%
+  &__videolink
+    overflow: hidden
+    i
+      display: inline-block
+      float: left
+      +png(play_link_b)
+      width: 36px
+      height: 36px
+    a
+      display: inline-block
+      float: left
+      margin-left: 1.5%
+      line-height: 36px
+      text-decoration: none
+      color: #000
+      font-size: 1.5em
+      font-weight: 300
+  &__text
+    margin-top: 6%
+  &__value
+    overflow: inherit
+    margin-top: 6%
+    ul
+      display: inline
+      li
+        display: inline-block
+        float: left
+        margin-right: 15%
+        p
+          font-size: 2.2em
+.battery
+  overflow: hidden
+  width: 100%
+  clear: both
+  padding: 3% 14% 3.5% 25%
+  background: #000
+  color: #fff
+  img
+    display: block
+    float: left
+    clear: left
+  &__conteiner
+    overflow: inherit
+    width: 45%
+    margin-right: 10%
+    float: right
+    clear: right
+  &__title
+    font-size: 2.6em
+    font-weight: 300
+    margin-bottom: 5%
+    margin-top: 22%
+  &__videolink
+    overflow: hidden
+    i
+      display: inline-block
+      float: left
+      +png(play_link)
+      width: 36px
+      height: 36px
+    a
+      display: inline-block
+      float: left
+      margin-left: 1.5%
+      line-height: 36px
+      text-decoration: none
+      color: #fff
+      font-size: 1.5em
+      font-weight: 300
+  &__text
+    margin-top: 6%
+  &__value
+    overflow: inherit
+    margin-top: 6%
+    ul
+      display: inline
+      li
+        display: inline-block
+        float: left
+        margin-right: 15%
+        p
+          font-size: 2.2em
+.read
+  overflow: hidden
+  width: 100%
+  clear: both
+  padding: 3% 14% 3.5% 25%
+  background-color: #fff
+  background: linear-gradient(135deg, rgba(244,232,233,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e8e9', endColorstr='#ffffff', GradientType=1 )
+  // background-image: url(../img/bg_read.png)
+  // background-position: top left
+  // background-repeat: no-repeat
+  img
+    display: block
+    float: right
+    clear: right
+  &__conteiner
+    overflow: inherit
+    width: 40%
+    float: left
+    clear: left
+  &__title
+    font-size: 2.6em
+    font-weight: 300
+    margin-bottom: 5%
+  &__videolink
+    overflow: hidden
+    i
+      display: inline-block
+      float: left
+      +png(play_link_b)
+      width: 36px
+      height: 36px
+    a
+      display: inline-block
+      float: left
+      margin-left: 1.5%
+      line-height: 36px
+      text-decoration: none
+      color: #000
+      font-size: 1.5em
+      font-weight: 300
+  &__text
+    margin-top: 6%
+  &__value
+    overflow: inherit
+    margin-top: 6%
+    ul
+      display: inline
+      li
+        display: inline-block
+        float: left
+        margin-right: 15%
+        p
+          font-size: 2.2em
+.style
+  overflow: hidden
+  width: 100%
+  clear: both
+  padding: 3% 14% 3.5% 25%
+  background: #000
+  color: #fff
+  img
+    display: block
+    float: left
+    clear: left
+  &__conteiner
+    overflow: inherit
+    width: 45%
+    margin-right: 10%
+    float: right
+    clear: right
+  &__title
+    font-size: 2.6em
+    font-weight: 300
+    margin-bottom: 5%
+    margin-top: 22%
+  &__videolink
+    overflow: hidden
+    i
+      display: inline-block
+      float: left
+      +png(play_link)
+      width: 36px
+      height: 36px
+    a
+      display: inline-block
+      float: left
+      margin-left: 1.5%
+      line-height: 36px
+      text-decoration: none
+      color: #fff
+      font-size: 1.5em
+      font-weight: 300
+  &__text
+    margin-top: 6%
+  &__value
+    overflow: inherit
+    margin-top: 6%
+    ul
+      display: inline
+      li
+        display: inline-block
+        float: left
+        margin-right: 15%
+        p
+          font-size: 2.2em

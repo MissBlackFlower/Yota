@@ -9,12 +9,10 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
-	<link rel="stylesheet" media="all" href="css/minimalist.css" >
+	<link rel="stylesheet" media="all" href="css/flarevideo.css">
 	<script src="js/app.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script src="js/flowplayer.js"></script>
 	<script src="js/jquery-2.2.3.min.js"></script>
-	<script src="js/script.js"></script>
+  <script src="js/jquery.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="header">
@@ -98,19 +96,148 @@
 </div>
 <div class="video">
 	<div class="video__conteiner">
-		<div class="flowplayer">
-			<video>
-			<source src="img/yota.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-			<iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/ToX0Cnx3QHc?controls=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&autohide=0&color=white&iv_load_policy=3&theme=light" frameborder="0" allowfullscreen></iframe>
-			</video>
+		<!-- div for script flarevideo.js-->
+		<div id="video">
 		</div>
 	</div>
 </div>
-<div class="content">
-	<video url="https://www.youtube.com/watch?v=ToX0Cnx3QHc" poster="posterimage.jpg">
-	</video>
+<div class="forbes">
+	<h4 class="forbes__title">forbes</h4>
+	<div class="forbes__text">
+		<ul>
+			<li>Yota Devices доказала свою несомненную конкурентоспособность в области дизайна, производства и дистрибуции.</li>
+		</ul>
+	</div>
+	<div class="forbes__conteiner">
+	<div class="forbes__textbox">
+		<h5>VEDOMOSTI.RU</h5>
+		<ul>
+			<li>Это особое устройство <br>и оно находит своих покупателей — тех, кто следит за всеми новинками и хочет протестировать их первым.</li>
+		</ul>
+	</div>
+	<div class="forbes__textbox">
+		<h5>IXBT.COM</h5>
+		<ul>
+			<li>Теперь не нужно тратить время на активацию дисплея. Такой подход сохраняет время и внимание для живого человеческого общения.</li>
+		</ul>
+	</div>
+	<div class="forbes__textbox">
+		<h5>REDROID.RU</h5>
+		<ul>
+			<li>Признаюсь честно, смартфоном сложно не гордиться, когда на его коробке красуется надпись “Designed in Russia”</li>
+		</ul>
+	</div>
+	<div class="forbes__textbox">
+		<h5>GQ RUSSIA</h5>
+		<ul>
+			<li>Это такой смартфон, который умеет удивлять.</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<div class="yotapanel">
+	<div class="yotapanel__conteiner">
+		<h2 class="yotapanel__title">Покажет самое <br>важное</h2>
+		<div class="yotapanel__videolink"><i></i><a href="http://www.youtube.com/watch?v=xlDIFTvFX4E" target="_blank">Cмотреть видео</a></div>
+		<div class="yotapanel__text">
+			<p>Собрав на YotaPanel виджеты для звонков, уведомлений, новостей курсов валют, погоды, календаря и много другого, вы будете в курсе событий с одного взгляда без разблокировки телефона. </p>
+		</div>
+		<div class="yotapanel__value">
+			<ul>
+				<li>
+					<span>E-ink дисплей</span>
+					<p>4.7‘’</p>
+				</li>
+				<li>
+					<span>Скорость обновления</span>
+					<p>120 мс</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<img src="img/yota3.png">
+</div>
+<div class="battery">
+	<div class="battery__conteiner">
+		<h2 class="battery__title">Работает по дням, <br>а не по часам</h2>
+		<div class="battery__videolink"><i></i><a href="http://www.youtube.com/watch?v=xlDIFTvFX4E" target="_blank">Cмотреть видео</a></div>
+		<div class="battery__text">
+			<p>Два дня работы в режиме YotaEnergy, который экономит батарейку и сохраняет основные функции телефона. Если батарея всё-таки садится, сохраните карту или авиабилет в YotaSnap, и информация останется на втором экране даже после полного разряда батереи.</p>
+		</div>
+		<div class="battery__value">
+			<ul>
+				<li>
+					<span>Аккумулятор</span>
+					<p>2500 мАч</p>
+				</li>
+				<li>
+					<span>Режим YotaEnergy</span>
+					<p>48+ ч.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<img src="img/yota_battery.png">
+</div>
+<div class="read">
+	<div class="read__conteiner">
+		<h2 class="read__title">Придаст вкус чтению</h2>
+		<div class="read__videolink"><i></i><a href="http://www.youtube.com/watch?v=xlDIFTvFX4E" target="_blank">Cмотреть видео</a></div>
+		<div class="read__text">
+			<p>100 часов на чтение книг, соцсетей, новостей, RSS-фидов и другого текста. Всегда включённый экран бережёт глаза, не бликует на солнце и поддерживает распространенные форматы документов.</p>
+		</div>
+		<div class="read__value">
+			<ul>
+				<li>
+					<span>Чтение</span>
+					<p>100+ ч.</p>
+				</li>
+				<li>
+					<span>Карты</span>
+					<p>18+ ч.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<img src="img/img_04_en.png">
+</div>
+<div class="style">
+	<div class="style__conteiner">
+		<h2 class="style__title">Носит личный  <br>характер</h2>
+		<div class="style__videolink"><i></i><a href="http://www.youtube.com/watch?v=xlDIFTvFX4E" target="_blank">Cмотреть видео</a></div>
+		<div class="style__text">
+			<p>Не просто фоновая картинка, обложка! Поставьте любое изображение или настройте слайдшоу из Инстаграма. Творите и делитесь своим настроением с окружающими!</p>
+		</div>
+		<div class="style__value">
+			<ul>
+				<li>
+					<span>Градации серого</span>
+					<p>16</p>
+				</li>
+				<li>
+					<span>Самовыражение</span>
+					<p>∞</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<img src="img/yota_style.png">
 </div>
 <div class="footer">
 </div>
 </body>
+<!-- <script src="js/jquery.ui.slider.js" type="text/javascript"></script> -->
+<script src="js/jquery.flash.js" type="text/javascript"></script>
+<script src="js/flarevideo.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+	jQuery(function($){
+		fv = $("#video").flareVideo();
+		fv.load([
+			{
+				src:  'img/yota.mp4',
+				type: 'video/mp4',
+			}
+		]);
+	})
+</script>
 </html>
