@@ -46,11 +46,144 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
+
+// fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic)
-+font(Rounded, rounded-webfont)
-+font(Rounded-Light, Rounded-Light)
-+font(Rounded-Thin, Rounded-Thin)
-+font(Rounded-Black, Rounded-Black)
+
++font(RoundedThin, RoundedThin)
++font(RoundedBlack, RoundedBlack)
+
+// mixins
+=Rounded-T
+	font-family: "RoundedThin", Arial, serif
+=Rounded-B
+	font-family: "RoundedBlack", Arial, serif
+
+// body
 body
-	font-family: 'Open Sans', sans-serif
+	font-family: 'Open Sans', Arial, sans-serif
 // common blocks
+.center
+	overflow: hidden
+	padding: 0 3%
+	max-width: 1260px
+	margin: auto
+
+.header
+	overflow: hidden
+	width: 100%
+	padding: 0.5% 0
+	background-color: #081319
+	&__logo
+		width: 20%
+		display: inline-block
+		float: left
+		clear: left
+		img
+			width: 100%
+			max-width: 154px
+	&__menu
+		width: 80%
+		display: inline-block
+		float: right
+		clear: right
+		font-size: 0.9em
+		text-align: center
+		white-space: nowrap
+		li
+			display: inline-block
+			float: right
+			padding: 0.5% 1.7%
+			a
+				text-transform: uppercase
+				text-decoration: none
+				color: #fff
+	&__buy
+		margin-left: 1.7%
+		border-radius: 10px
+		border: solid 1px #fff
+.white-line
+	width: 100%
+	float: left
+	color: #fff
+	height: 2px
+	border: none
+	margin: 0
+
+// footers block
+.footer
+	overflow: hidden
+	width: 100%
+	clear: both
+	padding: 3% 0
+	background: #fff
+	color: #797979
+	&__conteiner
+		width: 100%
+		float: left
+		clear: both
+		padding-bottom: 1.5%
+	&__social
+		width: 50%
+		display: block
+		float: left
+		clear: left
+		padding-right: 2%
+		text-align: center
+		border-right: solid 1px rgba(121,121,121,0.5)
+	@each $s in fb,vk,tw,inst,ok
+		.social--#{$s}
+			display: block
+			float: left
+			+s(#{$s})
+	@each $s in letter,phone
+		.footer__#{$s}
+			display: inline-block
+			float: left
+			+s(#{$s})
+	&__links
+		display: inline-block
+		width: 100%
+		float: right
+		li
+			float: right
+			padding-left: 1.5%
+	&__contacts
+		width: 50%
+		display: inline-block
+		float: right
+		clear: right
+		padding-left: 2%
+		+vertical
+		font-size: 1em
+		line-height: 150%
+		ul
+			display: inline-block
+			width: 100%
+			padding-top: 1%
+			float: left
+			li
+				display: inline-block
+				float: left
+				padding-right: 3%
+	&__menu
+		width: 100%
+		display: inline-block
+		padding: 1% 0
+		margin: auto
+		clear: both
+		font-size: 0.9em
+		text-align: center
+		white-space: nowrap
+		li
+			display: inline-block
+			text-align: center
+			padding: 0.5% 1%
+			a
+				text-transform: uppercase
+				text-decoration: none
+				color: #797979
+	&__buy
+		margin-left: 1.5%
+		border-radius: 10px
+		border: solid 1px #797979
