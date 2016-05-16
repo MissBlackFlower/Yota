@@ -22,11 +22,15 @@
 		<div class="header__logo">
 			<img src="img/Logo.png" alt="Yota">
 		</div>
+		<div class="header__basket">
+			<button type="button" class="header__buy"><span class="tovar-count">1</span><a href="#">товар</a></button>
+			<p>Корзина:</p>
+		</div>
 		<div class="header__menu">
 			<ul>
 				<li class="header__buy"><a href="#">Купить</a></li>
 				<li><a href="#">Сервис</a></li>
-				<li><a href="#">Аксессуары</a></li>
+				<li><a href="list-tovar.html">Аксессуары</a></li>
 				<li><a href="#"><b>Yota</b>phone 2</a></li>
 				<li><a href="#">Магазины</a></li>
 			</ul>
@@ -58,10 +62,16 @@
 				<a href="#">Сервистные центры</a>
 			</div>
 		</div>
-	</div>
-	<div class="main__arrows">
-		<div class="arrow--prev"></div>
-		<div class="arrow--next"></div>
+		<div class="main__arrows">
+			<div class="slick-prev"></div>
+			<div class="slick-next"></div>
+			<div class="slick-dots">
+				<ul>
+					<li><button type="button" name="button"></button></li>
+					<li><button type="button" name="button"></button></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="two-sides">
@@ -105,9 +115,9 @@
 </div>
 <div class="video">
 	<div class="video__conteiner">
-		<video id="player_a" class="projekktor" poster="img/intro.png" title="Video" width="1260" height="560" controls>
+		<video id="player_a" class="projekktor" poster="img/intro.png" title="Video" width="100%" height="560" controls>
 		    <source src="img/yota.ogv" type="video/ogg" />
-		    <source src="img/yota.mp4" type="video/mp4" />
+		    <source src="img/yota.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2"/>
 		</video>
 	</div>
 </div>
@@ -120,31 +130,35 @@
 			</ul>
 		</div>
 		<div class="forbes__conteiner">
-		<div class="forbes__textbox">
-			<h5>VEDOMOSTI.RU</h5>
-			<ul>
-				<li>Это особое устройство <br>и оно находит своих покупателей — тех, кто следит за всеми новинками и хочет протестировать их первым.</li>
-			</ul>
+			<div class="forbes__textbox">
+				<h5>VEDOMOSTI.RU</h5>
+				<ul>
+					<li>Это особое устройство <br>и оно находит своих покупателей — тех, кто следит за всеми новинками и хочет протестировать их первым.</li>
+				</ul>
+			</div>
+			<div class="forbes__textbox">
+				<h5>IXBT.COM</h5>
+				<ul>
+					<li>Теперь не нужно тратить время на активацию дисплея. Такой подход сохраняет время и внимание для живого человеческого общения.</li>
+				</ul>
+			</div>
+			<div class="forbes__textbox">
+				<h5>REDROID.RU</h5>
+				<ul>
+					<li>Признаюсь честно, смартфоном сложно не гордиться, когда на его коробке красуется надпись “Designed in Russia”</li>
+				</ul>
+			</div>
+			<div class="forbes__textbox">
+				<h5>GQ RUSSIA</h5>
+				<ul>
+					<li>Это такой смартфон, который умеет удивлять.</li>
+				</ul>
+			</div>
 		</div>
-		<div class="forbes__textbox">
-			<h5>IXBT.COM</h5>
-			<ul>
-				<li>Теперь не нужно тратить время на активацию дисплея. Такой подход сохраняет время и внимание для живого человеческого общения.</li>
-			</ul>
-		</div>
-		<div class="forbes__textbox">
-			<h5>REDROID.RU</h5>
-			<ul>
-				<li>Признаюсь честно, смартфоном сложно не гордиться, когда на его коробке красуется надпись “Designed in Russia”</li>
-			</ul>
-		</div>
-		<div class="forbes__textbox">
-			<h5>GQ RUSSIA</h5>
-			<ul>
-				<li>Это такой смартфон, который умеет удивлять.</li>
-			</ul>
-		</div>
-		</div>
+	</div>
+	<div class="forbes__arrows">
+		<div class="slick-prev"></div>
+		<div class="slick-next"></div>
 	</div>
 </div>
 <div class="yotapanel">
@@ -320,6 +334,9 @@
 				<li><a href="#">Сервис</a></li>
 				<li class="footer__buy"><a href="#">Купить</a></li>
 			</ul>
+		</div>
+		<div class="footer__copyright">
+			<span>&copy; 2015, Yota 4 you</span>
 		</div>
 	</div>
 </div>
