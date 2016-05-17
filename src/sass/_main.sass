@@ -94,13 +94,17 @@
       &:before
         content: " "
         background-image: url(../img/right_arrow.png)
-    .slick-dots
-      button
-        display: block
-        width: 11px
-        height: 11px
-        background: url(../img/dots.svg)
-        box-shadow: none
+  .slick-dots
+    button
+      display: block
+      width: 11px
+      height: 11px
+      background: url(../img/dots.svg)
+      box-shadow: none
+    li
+      &.slick-active
+        button
+          background: #fff
 .two-sides
   overflow: hidden
   width: 100%
@@ -187,7 +191,8 @@
   &__textbox
     float: left
     width: 20%
-    margin-right: 5%
+    margin-left: 1%
+    padding-right: 0.5%
     font-size: 1em
   &__arrows
     .slick-prev,

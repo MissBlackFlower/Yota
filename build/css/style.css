@@ -63,7 +63,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .slick-dots { text-align: center; position: absolute; margin: 0; bottom: 0; left: 0; right: 0; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
 .slick-dots li.slick-active button { background: #fff; }
-.slick-dots button { display: block; width: 10px; height: 10px; background: #fff; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; border-radius: 50%; }
+.slick-dots button { display: block; width: 10px; height: 10px; background: #000; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; border-radius: 50%; }
 
 @font-face { font-family: RoundedThin; src: url("fonts/RoundedThin.eot"); src: url("fonts/RoundedThin.eot?#iefix") format("embedded-opentype"), url("fonts/RoundedThin.woff2") format("woff2"), url("fonts/RoundedThin.woff") format("woff"), url("fonts/RoundedThin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: RoundedBlack; src: url("fonts/RoundedBlack.eot"); src: url("fonts/RoundedBlack.eot?#iefix") format("embedded-opentype"), url("fonts/RoundedBlack.woff2") format("woff2"), url("fonts/RoundedBlack.woff") format("woff"), url("fonts/RoundedBlack.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -136,7 +136,8 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 .main__arrows .slick-prev, .main__arrows .slick-next { margin-top: -26px; height: 52px; width: 25px; cursor: pointer; background-color: transparent; }
 .main__arrows .slick-prev:before, .main__arrows .slick-next:before { width: 26px; height: 52px; content: " "; background-color: transparent; background-image: url(../img/left_arrow.png); }
 .main__arrows .slick-next:before { content: " "; background-image: url(../img/right_arrow.png); }
-.main__arrows .slick-dots button { display: block; width: 11px; height: 11px; background: url(../img/dots.svg); -webkit-box-shadow: none; box-shadow: none; }
+.main .slick-dots button { display: block; width: 11px; height: 11px; background: url(../img/dots.svg); -webkit-box-shadow: none; box-shadow: none; }
+.main .slick-dots li.slick-active button { background: #fff; }
 
 .two-sides { overflow: hidden; width: 100%; clear: both; padding: 4% 0; background: #fff; }
 .two-sides h5 { padding-bottom: 3%; font-size: 1em; font-weight: 600; text-transform: uppercase; }
@@ -158,7 +159,7 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 .forbes__title { margin-bottom: 2%; font-size: 1.1em; text-transform: uppercase; }
 .forbes__text { width: 100%; float: left; clear: both; font-size: 2.5em; font-weight: 300; line-height: 1.2em; }
 .forbes__conteiner { width: 100%; float: left; margin-top: 4%; position: relative; }
-.forbes__textbox { float: left; width: 20%; margin-right: 5%; font-size: 1em; }
+.forbes__textbox { float: left; width: 20%; margin-left: 1%; padding-right: 0.5%; font-size: 1em; }
 .forbes__arrows .slick-prev, .forbes__arrows .slick-next { margin-top: 0; height: 52px; width: 25px; left: 15%; top: 67%; cursor: pointer; background-color: transparent; }
 .forbes__arrows .slick-prev:before, .forbes__arrows .slick-next:before { width: 26px; height: 52px; content: " "; background-color: transparent; background-image: url(../img/left_arrow-blue.png); }
 .forbes__arrows .slick-next { left: 85%; }
@@ -289,8 +290,8 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 .product__specification { overflow: inherit; width: 100%; float: left; clear: both; padding: 5% 5% 5% 0; color: #5a5a5a; }
 .product__img { overflow: inherit; position: relative; width: 50%; float: right; clear: right; }
 .product__img img { display: block; margin: auto; clear: both; }
-.product__img .slick-dots button { display: block; width: 11px; height: 11px; background: #ddd; -webkit-box-shadow: none; box-shadow: none; }
-.product__img .slick-dots li.slick-active button { background: #101c23; }
+.product .slick-dots button { display: block; width: 11px; height: 11px; background: #ddd; -webkit-box-shadow: none; box-shadow: none; }
+.product .slick-dots li.slick-active button { background: #101c23; }
 .product__characteristic { overflow: hidden; width: 100%; float: left; clear: both; color: #5a5a5a; padding-bottom: 7%; }
 .product__characteristic h3 { font-size: 1em; font-weight: 700; }
 .product__characteristic ul { display: inline-block; float: left; clear: both; margin-left: 5%; padding-top: 3%; }
