@@ -70,7 +70,6 @@
       font-size: 1em
       color: #fff
       line-height: 2
-
   &__icon-location
     display: inline-block
     margin-right: 1%
@@ -95,6 +94,7 @@
         content: " "
         background-image: url(../img/right_arrow.png)
   .slick-dots
+    top: 99%
     button
       display: block
       width: 11px
@@ -148,7 +148,6 @@
     width: 22%
     margin-right: 3%
     font-size: 1.2em
-
 .video
   background-color: #000
   width: 100%
@@ -176,10 +175,12 @@
     margin-bottom: 2%
     font-size: 1.1em
     text-transform: uppercase
+    padding-left: 4%
   &__text
     width: 100%
     float: left
     clear: both
+    padding-left: 4%
     font-size: 2.5em
     font-weight: 300
     line-height: 1.2em
@@ -204,6 +205,16 @@
       top: 67%
       cursor: pointer
       background-color: transparent
+      +r(1750)
+        left: 0
+        margin: 0 5%
+      +r(1400)
+        margin: 0
+      +r(1000)
+        position: relative
+        display: none
+        float: left
+        margin: 5% 20% 0 20%
       &:before
         width: 26px
         height: 52px
@@ -212,6 +223,11 @@
         background-image: url(../img/left_arrow-blue.png)
     .slick-next
       left: 85%
+      +r(1750)
+        left: auto
+        right: 0
+      +r(1000)
+        float: right
       &:before
         content: " "
         background-image: url(../img/right_arrow-blue.png)
@@ -295,7 +311,6 @@
     &__videolink
       i
         +png(play_link)
-
 .yotaread
   background: linear-gradient(135deg, rgba(244,232,233,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e8e9', endColorstr='#ffffff', GradientType=1 )

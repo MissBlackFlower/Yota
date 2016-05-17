@@ -70,6 +70,38 @@ body
 	padding: 0 3%
 	max-width: 1260px
 	margin: auto
+	+r(1000)
+		padding: 0 5%
+
+// btn-menu
+.btn-menu
+	display: inline-block
+	position: relative
+	float: right
+	width: 30px
+	height: 25px
+	background: transparent
+	display: none
+	+r(1000)
+		display: block
+	&:before,
+	&:after,
+	span
+		position: absolute
+		content: ''
+		top: 10px
+		left: 0
+		right: 0
+		height: 5px
+		background: #fff
+		transition: transform .3s
+	&:before
+		top: 0
+	&:after
+		top: 21px
+	span
+		will-change: opacity
+		transition: opacity .3s, transform .3s
 
 .header
 	overflow: hidden
@@ -78,6 +110,22 @@ body
 	background-color: #081319
 	color: #fff
 	font-size: 1.2em
+	&.is-active
+		.btn-menu
+			&:before
+				transform: translateY(11px) rotate(45deg)
+			&:after
+				transform: translateY(-12px) rotate(-45deg)
+				+r(768)
+					transform: translateY(-10px) rotate(-45deg)
+			span
+				transform: translate3d(0,0,0)
+				opacity: 0
+				transform: scale(0)
+	+r(1000)
+		padding: 2% 0
+	+r(600)
+		padding: 3% 0
 	&__logo
 		width: 20%
 		display: inline-block
@@ -86,6 +134,7 @@ body
 		img
 			width: 100%
 			max-width: 154px
+			min-width: 100px
 	&__basket
 		width: 20%
 		display: none
@@ -122,10 +171,21 @@ body
 				text-transform: uppercase
 				text-decoration: none
 				color: #fff
+		+r(1000)
+			width: 100%
+			clear: both
+			text-align: center
+			padding-top: 5%
+			li
+				display: block
+				clear: both
+				float: none
 	&__buy
 		margin-left: 2%
 		border-radius: 10px
 		border: solid 1px #fff
+		+r(1000)
+			margin-left: 0
 .white-line
 	width: 100%
 	float: left
