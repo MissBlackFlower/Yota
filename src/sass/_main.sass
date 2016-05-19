@@ -4,9 +4,52 @@
   padding: 3.5% 0
   background: url(../img/grad.png) center center no-repeat rgba(8,19,25,1)
   background: radial-gradient(ellipse at center, rgba(33,53,66,1) 0%, rgba(33,53,66,1) 16%, rgba(8,19,25,1) 59%, rgba(8,19,25,1) 100%)
+  +r(1000)
+    padding-bottom: 5%
+  +r(800)
+    &__img
+      width: 100%
+      img
+        width: 80%
+    &__conteiner
+      width: 100%
+      text-align: center
+    &__title
+      float: none
+      display: inline
+      font-size: 3em
+    &__text
+      padding: 0 10%
+      margin-top: 3%
+      text-align: justify
+    &__price
+      padding: 7% 15% 0 15%
+      text-align: left
+      span
+        font-size: 3em
+      button
+        margin-top: 2%
+        font-size: 1.2em
+  +r(450)
+    &__img
+      img
+        width: 70%
+    &__title
+      font-size: 2.5em
+    &__text
+      text-align: left
+    &__price
+      padding: 7% 20% 0 20%
+      text-align: center
+      span
+        display: block
+        width: 100%
+        font-size: 2.2em
+      button
+        display: block
+        width: 100%
   &__img
     width: 50%
-    overflow: inherit
     float: left
     img
       width: 100%
@@ -14,11 +57,11 @@
       margin: auto
   &__conteiner
     width: 50%
-    overflow: hidden
-    padding-top: 2.5%
+    float: right
+    padding: 2.5% 0 0 2%
     color: #fff
+    text-align: left
   &__title
-    display: block
     float: left
     clear: right
     text-transform: uppercase
@@ -28,19 +71,14 @@
     b
       +Rounded-B
   &__text
-    float: left
-    clear: left
+    display: inline-block
     margin-top: 5.7%
     font-size: 1.2em
-    p
-      display: block
-      float: left
   &__price
-    width: 85%
-    overflow: hidden
+    width: 100%
     float: left
-    clear: both
-    margin-top: 17.1%
+    padding: 17% 15% 0 0
+    +clr
     h6
       font-size: 1em
       font-weight: 400
@@ -49,32 +87,37 @@
       i
         font-size: 0.8em
     button
-      display: block
       float: right
-      clear: right
       margin-top: 2.5%
+      padding: 0.5% 8%
+      border-radius: 15px
       background-color: #00aeef
       color: #fff
       font-size: 1em
       line-height: 250%
-      padding: 0.5% 8%
-      border-radius: 15px
   &__address
     width: 100%
-    overflow: hidden
-    margin-top: 4%
     float: left
-    clear: left
+    padding-top: 4%
     a
-      margin-right: 6%
-      font-size: 1em
+      padding: 0 6% 0 1%
       color: #fff
+      font-size: 1em
       line-height: 2
+    +r(350)
+      a
+        font-size: 0.8em
   &__icon-location
     display: inline-block
-    margin-right: 1%
     vertical-align: middle
     +s(location)
+
+  // стили для элементов slick
+  .slick__conteiner
+    +r(1000)
+      padding-bottom: 5%
+    +r(780)
+      padding-bottom: 10%
   &__arrows
     .slick-prev,
     .slick-next
@@ -94,11 +137,7 @@
         content: " "
         background-image: url(../img/right_arrow.png)
   .slick-dots
-    top: 99%
     button
-      display: block
-      width: 11px
-      height: 11px
       background: url(../img/dots.svg)
       box-shadow: none
     li
@@ -106,9 +145,7 @@
         button
           background: #fff
 .two-sides
-  overflow: hidden
   width: 100%
-  clear: both
   padding: 4% 0
   background: #fff
   h5
@@ -119,10 +156,8 @@
   li
     list-style-image: url(../img/symbol.png)
   &__titles
-    overflow: hidden
     width: 50%
     float: left
-    clear: left
   &__title
     text-transform: uppercase
     +Rounded-T
@@ -136,34 +171,97 @@
   &__text
     float: left
     width: 50%
-    clear: right
     font-size: 1.4em
     font-weight: 300
+    padding-left: 2.5%
   &__conteiner
+    overflow: hidden
     width: 100%
-    float: left
-    margin-top: 6%
+    padding: 6% 0 0 5%
   &__textbox
     float: left
     width: 22%
     margin-right: 3%
     font-size: 1.2em
+  +r(1050)
+    &__titles
+      padding: 0 5%
+    &__title
+      font-size: 3em
+    &__subtitle
+      font-size: 2.8em
+    &__textbox
+      width: 20%
+      margin-right: 5%
+      font-size: 1.2em
+  +r(900)
+    h5
+      padding-top: 5%
+    &__text
+      font-size: 1.2em
+    &__title
+      font-size: 2.8em
+    &__subtitle
+      font-size: 2.6em
+    &__textbox
+      font-size: 1em
+  +r(780)
+    &__text
+      width: 100%
+      padding-left: 8%
+    &__titles
+      width: 100%
+      padding: 0 0 4% 8%
+      text-align: center
+    &__conteiner
+      padding: 2% 0 0 8%
+    &__textbox
+      width: 45%
+  +r(530)
+    &__text
+      padding-left: 10%
+    &__titles
+      padding: 0 0 4% 10%
+    &__conteiner
+      padding: 8% 0 0 10%
+    &__textbox
+      width: 40%
+      margin-right: 10%
+  +r(414)
+    h5
+      font-size: 0.9em
+    &__text
+      font-size: 1em
+    &__title
+      font-size: 2em
+    &__subtitle
+      font-size: 1.8em
+    &__conteiner
+      padding: 6% 0 0 10%
+    &__textbox
+      width: 100%
 .video
   background-color: #000
   width: 100%
   &__conteiner
-    overflow: none
     width: 100%
     max-width: 1260px
     margin: auto
+    video
+      width: 100%
+      height: auto
+      max-height: 560px
+      margin: auto
+      cursor: pointer
 .forbes
-  overflow: hidden
   position: relative
   width: 100%
-  clear: both
   padding: 3.5% 0
+  +clr
   background: #eee
   font-size: 1.2em
+  +r(720)
+    font-size: 1em
   h5
     padding-bottom: 3%
     font-weight: 600
@@ -176,25 +274,43 @@
     font-size: 1.1em
     text-transform: uppercase
     padding-left: 4%
+    +r(720)
+      padding-left: 7%
+    +r(600)
+      text-align: center
   &__text
     width: 100%
-    float: left
-    clear: both
     padding-left: 4%
     font-size: 2.5em
     font-weight: 300
     line-height: 1.2em
+    +r(900)
+      font-size: 2em
+    +r(720)
+      font-size: 1.8em
+      padding-left: 7%
+    +r(600)
+      font-size: 1.5em
+      padding-left: 9%
+    +r(480)
+      font-size: 1.3em
+      padding-left: 15%
   &__conteiner
     width: 100%
     float: left
     margin-top: 4%
-    position: relative
   &__textbox
-    float: left
-    width: 20%
+    width: 24%
     margin-left: 1%
     padding-right: 0.5%
     font-size: 1em
+    +r(720)
+      width: 23.5%
+      margin-left: 1.5%
+    +r(480)
+      font-size: 0.9em
+
+  // cтили для стрелок слика
   &__arrows
     .slick-prev,
     .slick-next
@@ -202,74 +318,114 @@
       height: 52px
       width: 25px
       left: 15%
-      top: 67%
+      top: 65%
       cursor: pointer
       background-color: transparent
-      +r(1750)
+      +r(1720)
         left: 0
         margin: 0 5%
       +r(1400)
         margin: 0
-      +r(1000)
-        position: relative
+      +r(600)
         display: none
-        float: left
-        margin: 5% 20% 0 20%
       &:before
         width: 26px
         height: 52px
         content: " "
         background-color: transparent
         background-image: url(../img/left_arrow-blue.png)
+        +r(600)
+          display: none
     .slick-next
       left: 85%
-      +r(1750)
+      +r(1720)
         left: auto
         right: 0
-      +r(1000)
-        float: right
       &:before
         content: " "
         background-image: url(../img/right_arrow-blue.png)
 @each $s in panel,battery,read,styles
   .yota#{$s}
-    overflow: hidden
     width: 100%
-    clear: both
+    +clr
     padding: 3.5% 0
     background: #fff
     font-size: 1.1em
+    +r(1024)
+      font-size: 1em
+      &__text
+        padding-right: 10%
+      &__value
+        li
+          padding-right: 10%
+    +r(850)
+      font-size: 1.2em
+      padding: 3% 10%
+      &__col-1,
+      &__col-2
+        width: 100%
+        float: none
+        img
+          width: 90%
+          margin: auto
+      &__text
+        padding-right: 5%
+      &__value
+        li
+          padding-right: 5%
+    +r(600)
+      padding: 5% 0
+      font-size: 1.2em
+      text-align: center
+      &__col-1,
+      &__col-2
+        img
+          width: 90%
+          margin: auto
+      &__videolink
+        padding: 0 10%
+      &__text
+        padding: 0 10%
+        text-align: justify
+      &__value
+        li
+          padding-right: 0
+    +r(480)
+      &__title
+        font-size: 2em
+      &__videolink
+        padding: 0 5%
+        a
+          font-size: 1.2em
+      &__text
+        padding: 0 5%
+        text-align: left
+      &__value
+        li
+          p
+            font-size: 1.5em
     &__col-1
-      overflow: inherit
       width: 50%
       float: left
-      clear: left
     &__col-2
-      overflow: inherit
       width: 50%
       float: right
-      clear: right
       img
-        display: block
         width: 100%
-        float: right
-        clear: right
         max-width: 622px
     &__title
       margin-bottom: 5%
       font-size: 2.6em
       font-weight: 300
     &__videolink
-      overflow: hidden
+      width: 100%
+      +clr
       i
-        display: inline-block
         float: left
         +png(play_link_b)
         width: 36px
         height: 36px
       a
-        display: inline-block
-        width: inherit
         float: left
         line-height: 36px
         text-decoration: none
@@ -280,47 +436,38 @@
       margin-top: 6%
       padding-right: 15%
     &__value
-      overflow: inherit
+      width: 100%
       margin-top: 6%
-      ul
-        display: block
-        li
-          display: inline-block
-          float: left
-          padding-right: 15%
-          p
-            font-size: 2.2em
+      li
+        width: 50%
+        float: left
+        padding-right: 15%
+        p
+          font-size: 2.2em
 @each $s in battery,styles
   .yota#{$s}
     background: #000
     color: #fff
     img
       float: left
-      clear: left
     a
       color: #fff
     &__col-1
       float: right
-      clear: right
     &__col-2
       float: left
-      clear: left
     &__title
-      margin-bottom: 5%
-      margin-top: 15%
+      margin: 15% 0 5% 0
+      +r(850)
+        margin-top: 0
     &__videolink
       i
         +png(play_link)
 .yotaread
   background: linear-gradient(135deg, rgba(244,232,233,1) 0%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e8e9', endColorstr='#ffffff', GradientType=1 )
-  // background-image: url(../img/bg_read.png)
-  // background-position: top left
-  // background-repeat: no-repeat
 .yotacare
-  overflow: hidden
   width: 100%
-  clear: both
   padding: 2.5% 0
   background: #212325
   color: #fff
@@ -331,70 +478,100 @@
     margin-bottom: 7%
   &__conteiner
     width: 100%
-    float: left
-    margin-bottom: 10%
   &__textbox
     float: left
-    width: 20%
-    margin-right: 5%
+    width: 22%
+    margin-right: 3%
     font-size: 1em
     h5
-      display: block
-      float: left
-      clear: both
+      width: 100%
+      padding-bottom: 5%
       text-transform: uppercase
       font-weight: 600
       font-size: 1em
-      padding-bottom: 5%
     span
-      display: block
-      float: left
-      clear: both
+      width: 100%
       color: #cecece
   &__img
-    float: left
-    clear: both
+    width: 100%
     margin-bottom: 10%
+  +r(700)
+    font-size: 1em
+  +r(600)
+    &__textbox
+      width: 50%
+      height: 270px
+      margin-right: 0
+      margin-top: 5%
+      padding-right: 3%
+  +r(414)
+    &__textbox
+      width: 100%
+      height: auto
+      padding-right: 0
+      text-align: center
   @each $s in clock,delivery,warranty,discont
     .icon--#{$s}
       +s(#{$s})
   &__characteristics
-    display: block
-    width: 50%
-    margin: auto
+    width: 100%
+    margin-top: 10%
+    text-align: center
     +vertical
     font-size: 1.5em
     background-color: transparent
     color: #ababab
     cursor: pointer
     i
-      display: inline-block
       float: right
       +s(arrow)
+    +r(320)
+      font-size: 1.4em
   &__arrow
     display: inline-block
 .yotabuy
-  overflow: hidden
   width: 100%
+  position: relative
   max-height: 795px
   padding: 8% 10%
-  clear: both
+  +clr
   background: url(../img/yotabuy.jpg) top center no-repeat
   background-size: contain
   background-color: #000
+  +r(1000)
+    padding-right: 0
   &__price
-    display: block
-    padding: 20% 12% 20% 30%
     float: right
-    clear: both
+    padding: 20% 12% 20% 30%
     color: #fff
     font-size: 2.4em
     span
       font-size: 0.5em
+    +r(1300)
+      padding: 20% 10% 20% 30%
+    +r(1200)
+      padding: 20% 6% 20% 30%
+    +r(1000)
+      float: none
+      text-align: left
+      padding: 20% 2% 30% 70%
+    +r(800)
+      font-size: 1.8em
+    +r(600)
+      font-size: 1.5em
+    +r(500)
+      padding: 20% 0 30% 72%
+      text-align: center
+    +r(420)
+      padding: 20% 2% 30% 70%
+      font-size: 1.2em
+      span
+        font-size: 0.5em
   &__buttons
-    overflow: inherit
     width: 100%
-    clear: both
+    position: absolute
+    bottom: -10%
+
     text-align: center
     a
       display: inline-block
@@ -406,3 +583,7 @@
       font-size: 1em
       line-height: 220%
       text-decoration: none
+    +r(1000)
+      left: -6%
+      a
+        border-radius: 10px

@@ -1,5 +1,4 @@
 .content
-  overflow: hidden
   width: 100%
   .center
     padding: 1% 0
@@ -7,8 +6,6 @@
   .path
     display: inline-block
     width: 100%
-    float: left
-    clear: both
     padding: 0 0 3% 0
     text-align: left
     font-size: 0.9em
@@ -20,17 +17,12 @@
 
   .products
     width: 80%
-    overflow: hidden
     float: left
-    clear: left
     &__item
-      overflow: inherit
       width: 25%
       float: left
-      padding-right: 5%
-      padding-bottom: 5%
+      padding: 0 5% 5% 0
     &__buy
-      display: inline-block
       float: left
       padding: 3.2% 6%
       border-radius: 10px
@@ -65,3 +57,26 @@
         font-size: 1.2em
         color: #5a5a5a
         font-weight: 600
+    +r(1300)
+      width: 75%
+      padding: 0 3%
+      &__item
+        width: (100%/3)
+        padding: 0 5% 5% 0
+    +r(900)
+      width: 70%
+      &__item
+        width: 50%
+    +r(740)
+      width: 60%
+      &__item
+        width: 100%
+        text-align: center
+      &__buy
+        float: none
+        margin: auto
+    +r(550)
+      width: 50%
+    +r(450)
+      width: 100%
+      clear: both

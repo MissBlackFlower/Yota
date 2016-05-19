@@ -9,15 +9,14 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#fff">
 	<link rel="stylesheet" media="all" href="css/style.css" >
-	<!-- Load player theme -->
 	<script src="js/jquery-1.12.3.min.js"></script>
-	<link rel="stylesheet" media="all" href="css/projekktor.style.css" />
 	<script src="js/app.js"></script>
 	<!-- Load jquery -->
 	<script src="js/toggle.js"></script>
 </head>
 <body>
 //=include partials/header.html
+<!-- begin Main block -->
 <div class="main">
 	<div class="center">
 		<div class="slick__conteiner">
@@ -71,13 +70,11 @@
 		<div class="main__arrows">
 			<div class="slick-prev"></div>
 			<div class="slick-next"></div>
-			<ul>
-				<li><button type="button" name="button"></button></li>
-				<li class="slick-active"><button type="button" name="button"></button></li>
-			</ul>
 		</div>
 	</div>
 </div>
+<!-- end Main block  -->
+<!-- begin Two-sides block  -->
 <div class="two-sides">
 	<div class="center">
 		<div class="two-sides__titles">
@@ -117,9 +114,11 @@
 		</div>
 	</div>
 </div>
+<!--end Two-sides block  -->
+<!-- begin Video block  -->
 <div class="video">
 	<div class="video__conteiner">
-		<video id="player_a" class="projekktor" poster="img/intro.png" title="Video" width="100%" height="560" controls>
+		<video id="movie" class="view" poster="img/intro.png">
 		    <source src="img/yota.ogv" type="video/ogg" />
 		    <source src="img/yota.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2"/>
 		</video>
@@ -336,17 +335,4 @@
 </div>
 //=include partials/footer.html
 </body>
-<!-- load projekktor -->
-<script type="text/javascript" src="js/projekktor-1.3.09.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-	    projekktor(
-                '#player_a', // destination-container-selector-fuzz a la jQuery
-                 {}, // an empty Projekktor-ccofig-object
-                function(player) { // "onready" callback -
-                    $('#projekktorver').html( player.getPlayerVer() );
-                }
-	    );
-	});
-</script>
 </html>
