@@ -151,7 +151,7 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 .two-sides { width: 100%; padding: 4% 0; background: #fff; }
 .two-sides h5 { padding-bottom: 3%; font-size: 1em; font-weight: 600; text-transform: uppercase; }
 .two-sides li { list-style-image: url(../img/symbol.png); }
-.two-sides__titles { width: 50%; float: left; }
+.two-sides__titles { width: 50%; float: left; padding: 0 0 0 5%; }
 .two-sides__title { text-transform: uppercase; font-family: "RoundedThin", Arial, serif; font-size: 3.5em; letter-spacing: 0.1em; }
 .two-sides__title b { font-family: "RoundedBlack", Arial, serif; }
 .two-sides__subtitle { font-size: 3em; font-weight: 300; }
@@ -327,7 +327,6 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 @media only screen and (max-width: 1200px){
  .yotabuy__price{ padding: 20% 6% 20% 30%; } }
 @media only screen and (max-width: 1050px){
- .two-sides__titles{ padding: 0 5%; }
  .two-sides__title{ font-size: 3em; }
  .two-sides__subtitle{ font-size: 2.8em; }
  .two-sides__textbox{ width: 20%; margin-right: 5%; font-size: 1.2em; } }
