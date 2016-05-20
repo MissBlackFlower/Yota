@@ -67,7 +67,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @font-face { font-family: RoundedThin; src: url("fonts/RoundedThin.eot"); src: url("fonts/RoundedThin.eot?#iefix") format("embedded-opentype"), url("fonts/RoundedThin.woff2") format("woff2"), url("fonts/RoundedThin.woff") format("woff"), url("fonts/RoundedThin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: RoundedBlack; src: url("fonts/RoundedBlack.eot"); src: url("fonts/RoundedBlack.eot?#iefix") format("embedded-opentype"), url("fonts/RoundedBlack.woff2") format("woff2"), url("fonts/RoundedBlack.woff") format("woff"), url("fonts/RoundedBlack.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; }
+body { font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-size: 14px; }
 
 .center { position: relative; padding: 0 3%; *zoom: 1; max-width: 1260px; margin: auto; }
 .center:after { content: " "; display: table; clear: both; }
@@ -78,7 +78,7 @@ body { font-family: "Open Sans", Arial, sans-serif; font-size: 14px; }
 .btn-menu:after { top: 21px; }
 .btn-menu span { will-change: opacity; -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; transition: opacity 0.3s, transform 0.3s; }
 
-.header { width: 100%; padding: 0.5% 0; background-color: #081319; color: #fff; font-size: 1.2em; }
+.header { width: 100%; padding: 1% 0 0.5% 0; background-color: #081319; color: #fff; font-size: 1.2em; }
 .header.is-active .btn-menu:before { -webkit-transform: translateY(11px) rotate(45deg); -ms-transform: translateY(11px) rotate(45deg); transform: translateY(11px) rotate(45deg); }
 .header.is-active .btn-menu:after { -webkit-transform: translateY(-12px) rotate(-45deg); -ms-transform: translateY(-12px) rotate(-45deg); transform: translateY(-12px) rotate(-45deg); }
 .header.is-active .btn-menu span { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); opacity: 0; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
@@ -318,6 +318,7 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ left: 0; margin: 0 5%; }
  .forbes__arrows .slick-next{ left: auto; right: 0; } }
 @media only screen and (max-width: 1400px){
+ body{ overflow-x: hidden; }
  .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ margin: 0; } }
 @media only screen and (max-width: 1300px){
  .yotabuy__price{ padding: 20% 10% 20% 30%; }
