@@ -88,4 +88,19 @@ $(document).ready(function() {
 		event.stopPropagation();
 	});
 
+	// fixed header
+	$(window).scroll(function() {
+		if ($(window).width() >= 1000) {
+			var scroll = $(window).scrollTop(),
+				nav = $('.js-header-nav'),
+				height = $('.js-header').height();
+
+			if (scroll < height) {
+				nav.removeClass('is-fixed');
+			} else {
+				nav.addClass('is-fixed');
+			}
+		}
+	});
+
 });

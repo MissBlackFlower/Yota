@@ -4,13 +4,15 @@
   padding: 3.2% 0 1.5% 0
   background: url(../img/grad.png) center center no-repeat rgba(8,19,25,1)
   background: radial-gradient(ellipse at center, rgba(33,53,66,1) 0%, rgba(33,53,66,1) 16%, rgba(8,19,25,1) 59%, rgba(8,19,25,1) 100%)
+  +r(1280)
+    padding: 3.2% 2% 1.5% 2%
   +r(1000)
     padding-bottom: 5%
-  +r(800)
+  +r(850)
     &__img
       width: 100%
       img
-        width: 80%
+        width: 60%
     &__conteiner
       width: 100%
       text-align: center
@@ -33,12 +35,12 @@
   +r(520)
     .center
       padding: 0 10%
-  +r(450)
     &__img
       img
-        width: 70%
+        width: 80%
+  +r(450)
     &__title
-      font-size: 2.5em
+      font-size: 2.3em
     &__price
       padding: 7% 20% 0 20%
       text-align: center
@@ -113,18 +115,18 @@
       color: #fff
       font-size: 16px
       line-height: 1.74
-    +r(380)
+    +r(450)
       a
-        font-size: 0.9em
+        font-size: 0.85em
     +r(350)
       a
-        font-size: 0.8em
+        font-size: 0.75em
   &__icon-location
     display: inline-block
     vertical-align: middle
     +s(location)
 
-  // стили для элементов slick
+  // стили для элементов slick в блоке main
   .slick__conteiner
     +r(1000)
       padding-bottom: 5%
@@ -273,6 +275,9 @@
   +clr
   background: #eee
   font-size: 1.2em
+  +r(1400)
+    .center
+      padding: 0 10%
   +r(720)
     font-size: 1em
   h5
@@ -323,7 +328,7 @@
     +r(480)
       font-size: 0.9em
 
-  // cтили для стрелок слика
+  // cтили для стрелок слика в блоке forbes
   &__arrows
     .slick-prev,
     .slick-next
@@ -334,11 +339,12 @@
       top: 50%
       cursor: pointer
       background-color: transparent
-      +r(1720)
+      +r(1850)
         left: 0
-        margin: 0 5%
+        top: 60%
+        margin: 0 6%
       +r(1400)
-        margin: 0
+        margin: 0 4%
       +r(600)
         display: none
       &:before
@@ -351,7 +357,7 @@
           display: none
     .slick-next
       left: 82%
-      +r(1720)
+      +r(1850)
         left: auto
         right: 0
       &:before
@@ -386,37 +392,22 @@
       &__value
         li
           padding-right: 5%
-    +r(600)
-      padding: 5% 0
-      font-size: 1.2em
-      text-align: center
+    +r(460)
+      font-size: 0.8em
+      padding: 3% 0
       &__col-1,
-      &__col-2
-        img
-          width: 90%
-          margin: auto
-      &__videolink
-        padding: 0 10%
-      &__text
-        padding: 0 10%
-        text-align: justify
-      &__value
-        li
-          padding-right: 0
-    +r(480)
+      &__col-1
+        padding: 0
       &__title
-        font-size: 2em
-      &__videolink
-        padding: 0 5%
-        a
-          font-size: 1.2em
+        font-size: 36px
       &__text
-        padding: 0 5%
-        text-align: left
+        text-align: justify
+        padding-right: 0
       &__value
         li
           p
-            font-size: 1.5em
+            font-size: 1.8em
+
     &__col-1
       width: 50%
       float: left
@@ -555,17 +546,23 @@
 .yotabuy
   position: relative
   width: 100%
-  height: 706px
+  max-height: 706px
   +clr
   background: url(../img/yotabuy.jpg) top center no-repeat
   background-size: contain
   background-color: #000
-  .center
-    height: 706px
   +r(680)
     height: 500px
     .center
       height: 500px
+  +r(580)
+    background-size: 120%
+  +r(410)
+    background-size: 140%
+  +r(320)
+    background-size: 155%
+  .center
+    height: 706px
   &__price
     position: absolute
     color: #fff
@@ -574,19 +571,22 @@
     top: 50%
     span
       font-size: 0.5em
-    +r(1100)
-      top: 5%
-      text-align: center
-      left: 10%
+    +r(1030)
+      right: 3%
     +r(850)
-      font-size: 32px
+      top: 3%
+      left: 10%
+      text-align: center
+      font-size: 36px
     +r(720)
-      font-size: 28px
+      font-size: 32px
+    +r(480)
+      top: 70%
 
   &__buttons
     width: 100%
     position: absolute
-    left: 3%
+    left: 0
     bottom: 5%
     text-align: center
     a

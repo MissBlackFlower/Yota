@@ -95,9 +95,9 @@ body { font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-si
 
 .white-line { width: 100%; float: left; color: #fff; height: 2px; border: none; margin: 0; }
 
-.footer { width: 100%; padding: 3% 0 1% 0; background: #fff; color: #797979; font-size: 1.2em; }
-.footer__conteiner { width: 100%; padding-bottom: 1.5%; }
-.footer__social { overflow: hidden; width: 50%; float: left; padding-right: 2%; text-align: center; border-right: solid 1px rgba(121, 121, 121, 0.5); }
+.footer { width: 100%; padding: 2.5% 0 1% 0; background: #fff; color: #797979; font-size: 1.2em; }
+.footer__conteiner { width: 100%; padding-bottom: 4.5%; }
+.footer__social { overflow: hidden; width: 50%; float: left; padding-right: 1.5%; text-align: center; border-right: solid 1px rgba(121, 121, 121, 0.5); }
 .footer .social--fb { float: left; background-image: url("../img/icons.png"); width: 40px; height: 40px; background-position: -175px -120px; }
 .footer .social--vk { float: left; background-image: url("../img/icons.png"); width: 40px; height: 40px; background-position: -263px -120px; }
 .footer .social--tw { float: left; background-image: url("../img/icons.png"); width: 40px; height: 40px; background-position: -131px -120px; }
@@ -106,15 +106,15 @@ body { font-family: "Open Sans", Arial, sans-serif; font-weight: normal; font-si
 .footer .footer__letter { float: left; background-image: url("../img/icons.png"); width: 28px; height: 25px; background-position: -87px -164px; }
 .footer .footer__phone { float: left; background-image: url("../img/icons.png"); width: 20px; height: 25px; background-position: -119px -164px; }
 .footer__links { width: 100%; }
-.footer__links li { float: right; padding-left: 1.5%; }
+.footer__links li { float: right; padding-left: 3.5%; }
 .footer__contacts { overflow: hidden; width: 50%; float: right; padding-left: 2%; font-size: 1em; }
-.footer__contacts ul { width: 100%; padding-top: 1%; }
-.footer__contacts ul li { float: left; padding-right: 3%; }
-.footer__menu { width: 100%; display: inline-block; padding: 1% 0; margin: auto; font-size: 0.9em; text-align: center; }
-.footer__menu li { display: inline-block; text-align: center; padding: 0.5% 1%; }
+.footer__contacts ul { width: 100%; padding-top: 1.5%; }
+.footer__contacts ul li { float: left; padding-right: 5%; }
+.footer__menu { width: 100%; display: inline-block; padding: 1% 0; margin: auto; font-size: 14px; line-height: 2.346; text-align: center; }
+.footer__menu li { display: inline-block; text-align: center; padding: 0.5% 3% 0.5% 0; }
 .footer__menu li a { text-transform: uppercase; text-decoration: none; color: #797979; }
-.footer__buy { margin-left: 1.5%; -webkit-border-radius: 10px; border-radius: 10px; border: solid 1px #797979; }
-.footer__copyright { width: 100%; float: right; text-align: right; padding-top: 1%; font-size: 0.8em; }
+.footer__buy { padding: 6% 20%; -webkit-border-radius: 10px; border-radius: 10px; border: solid 1px #797979; }
+.footer__copyright { width: 100%; float: right; text-align: right; font-size: 14px; line-height: 2.346; }
 
 aside { width: 220px; float: right; clear: right; }
 aside ul li { float: left; padding: 4% 0; clear: both; }
@@ -272,12 +272,12 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 .yotacare__characteristics i { float: right; background-image: url("../img/icons.png"); width: 28px; height: 14px; background-position: -143px -164px; }
 .yotacare__arrow { display: inline-block; }
 
-.yotabuy { position: relative; width: 100%; height: 706px; *zoom: 1; background: url(../img/yotabuy.jpg) top center no-repeat; background-size: contain; background-color: #000; }
+.yotabuy { position: relative; width: 100%; max-height: 706px; *zoom: 1; background: url(../img/yotabuy.jpg) top center no-repeat; background-size: contain; background-color: #000; }
 .yotabuy:after { content: " "; display: table; clear: both; }
 .yotabuy .center { height: 706px; }
 .yotabuy__price { position: absolute; color: #fff; font-size: 38px; right: 10%; top: 50%; }
 .yotabuy__price span { font-size: 0.5em; }
-.yotabuy__buttons { width: 100%; position: absolute; left: 3%; bottom: 5%; text-align: center; }
+.yotabuy__buttons { width: 100%; position: absolute; left: 0; bottom: 5%; text-align: center; }
 .yotabuy__buttons a { display: inline-block; padding: 0.5% 3%; margin-right: 2%; background-color: #00aeef; color: #fff; -webkit-border-radius: 15px; border-radius: 15px; font-size: 1em; line-height: 220%; text-decoration: none; }
 
 .content { width: 100%; }
@@ -317,22 +317,25 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
 .product__characteristic ul li { padding: 1% 0; list-style: disc; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
-@media only screen and (max-width: 1720px){
- .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ left: 0; margin: 0 5%; }
+@media only screen and (max-width: 1850px){
+ .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ left: 0; top: 60%; margin: 0 6%; }
  .forbes__arrows .slick-next{ left: auto; right: 0; } }
 @media only screen and (max-width: 1400px){
  body{ overflow-x: hidden; }
- .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ margin: 0; } }
+ .forbes .center{ padding: 0 10%; }
+ .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ margin: 0 4%; } }
 @media only screen and (max-width: 1300px){
  .content .products{ width: 75%; padding: 0 3%; }
  .content .products__item{ width: 33.33333%; padding: 0 5% 5% 0; }
  .product{ width: 75%; padding: 0 3%; } }
-@media only screen and (max-width: 1100px){
- .yotabuy__price{ top: 5%; text-align: center; left: 10%; } }
+@media only screen and (max-width: 1280px){
+ .main{ padding: 3.2% 2% 1.5% 2%; } }
 @media only screen and (max-width: 1050px){
  .two-sides__title{ font-size: 3em; }
  .two-sides__subtitle{ font-size: 2.8em; }
  .two-sides__textbox{ width: 20%; margin-right: 5%; font-size: 1.2em; } }
+@media only screen and (max-width: 1030px){
+ .yotabuy__price{ right: 3%; } }
 @media only screen and (max-width: 1024px){
  .yotapanel{ font-size: 1em; }
  .yotapanel__text{ padding-right: 10%; }
@@ -370,6 +373,14 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .product__conteiner{ width: 100%; } }
 @media only screen and (max-width: 850px){
  .footer__copyright{ padding-top: 3%; text-align: center; }
+ .main__img{ width: 100%; }
+ .main__img img{ width: 60%; }
+ .main__conteiner{ width: 100%; text-align: center; }
+ .main__title{ float: none; display: inline; font-size: 3em; }
+ .main__text{ padding: 0 10%; margin-top: 3%; text-align: justify; }
+ .main__price{ padding: 7% 15% 0 15%; text-align: left; }
+ .main__price span{ font-size: 3em; }
+ .main__price button{ margin-top: 2%; font-size: 1.2em; }
  .yotapanel{ font-size: 1.2em; padding: 3% 10%; }
  .yotapanel__col-1, .yotapanel__col-2{ width: 100%; float: none; }
  .yotapanel__col-1 img, .yotapanel__col-2 img{ width: 90%; margin: auto; }
@@ -392,16 +403,7 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .yotastyles__value li{ padding-right: 5%; }
  .yotabattery__title{ margin-top: 0; }
  .yotastyles__title{ margin-top: 0; }
- .yotabuy__price{ font-size: 32px; } }
-@media only screen and (max-width: 800px){
- .main__img{ width: 100%; }
- .main__img img{ width: 80%; }
- .main__conteiner{ width: 100%; text-align: center; }
- .main__title{ float: none; display: inline; font-size: 3em; }
- .main__text{ padding: 0 10%; margin-top: 3%; text-align: justify; }
- .main__price{ padding: 7% 15% 0 15%; text-align: left; }
- .main__price span{ font-size: 3em; }
- .main__price button{ margin-top: 2%; font-size: 1.2em; } }
+ .yotabuy__price{ top: 3%; left: 10%; text-align: center; font-size: 36px; } }
 @media only screen and (max-width: 780px){
  .main .slick__conteiner{ padding-bottom: 10%; }
  .two-sides__text{ width: 100%; padding-left: 8%; }
@@ -420,7 +422,7 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .forbes__title{ padding-left: 7%; }
  .forbes__text{ font-size: 32px; padding-left: 7%; }
  .forbes__textbox{ width: 23.5%; margin-left: 1.5%; }
- .yotabuy__price{ font-size: 28px; } }
+ .yotabuy__price{ font-size: 32px; } }
 @media only screen and (max-width: 700px){
  .yotacare{ font-size: 1em; } }
 @media only screen and (max-width: 680px){
@@ -432,29 +434,18 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .forbes__text{ font-size: 30px; padding-left: 9%; }
  .forbes__arrows .slick-prev, .forbes__arrows .slick-next{ display: none; }
  .forbes__arrows .slick-prev:before, .forbes__arrows .slick-next:before{ display: none; }
- .yotapanel{ padding: 5% 0; font-size: 1.2em; text-align: center; }
- .yotapanel__col-1 img, .yotapanel__col-2 img{ width: 90%; margin: auto; }
- .yotapanel__videolink{ padding: 0 10%; }
- .yotapanel__text{ padding: 0 10%; text-align: justify; }
- .yotapanel__value li{ padding-right: 0; }
- .yotabattery{ padding: 5% 0; font-size: 1.2em; text-align: center; }
- .yotabattery__col-1 img, .yotabattery__col-2 img{ width: 90%; margin: auto; }
- .yotabattery__videolink{ padding: 0 10%; }
- .yotabattery__text{ padding: 0 10%; text-align: justify; }
- .yotabattery__value li{ padding-right: 0; }
- .yotaread{ padding: 5% 0; font-size: 1.2em; text-align: center; }
- .yotaread__col-1 img, .yotaread__col-2 img{ width: 90%; margin: auto; }
- .yotaread__videolink{ padding: 0 10%; }
- .yotaread__text{ padding: 0 10%; text-align: justify; }
- .yotaread__value li{ padding-right: 0; }
- .yotastyles{ padding: 5% 0; font-size: 1.2em; text-align: center; }
- .yotastyles__col-1 img, .yotastyles__col-2 img{ width: 90%; margin: auto; }
- .yotastyles__videolink{ padding: 0 10%; }
- .yotastyles__text{ padding: 0 10%; text-align: justify; }
- .yotastyles__value li{ padding-right: 0; }
  .yotacare__textbox{ width: 50%; height: 270px; margin-right: 0; margin-top: 5%; padding-right: 3%; } }
+@media only screen and (max-width: 580px){
+ .yotabuy{ background-size: 120%; } }
+@media only screen and (max-width: 570px){
+ .footer{ padding-top: 4%; }
+ .footer__social{ width: 100%; float: none; padding-top: 3%; padding-right: 0; border-right: none; }
+ .footer__links{ width: 100%; text-align: center; }
+ .footer__links li{ float: none; display: inline-block; }
+ .footer__contacts{ width: 100%; padding-left: 0; text-align: center; }
+ .footer__contacts ul{ padding-top: 0; }
+ .footer__contacts ul li{ width: auto; float: none; display: inline-block; vertical-align: middle; } }
 @media only screen and (max-width: 550px){
- .footer__menu{ display: none; }
  .content .products{ width: 50%; }
  .product{ width: 50%; } }
 @media only screen and (max-width: 530px){
@@ -463,48 +454,49 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .two-sides__conteiner{ padding: 8% 0 0 10%; }
  .two-sides__textbox{ width: 40%; margin-right: 10%; } }
 @media only screen and (max-width: 520px){
- .main .center{ padding: 0 10%; } }
-@media only screen and (max-width: 510px){
- .footer__social{ width: 100%; float: none; padding-top: 3%; padding-right: 0; border-right: none; }
- .footer__links li{ float: none; display: inline-block; }
- .footer__contacts{ width: 100%; float: none; padding-left: 0; text-align: center; }
- .footer__contacts ul{ display: inline-block; }
- .footer__contacts ul li{ float: none; display: inline-block; padding-right: 1%; } }
+ .main .center{ padding: 0 10%; }
+ .main__img img{ width: 80%; } }
 @media only screen and (max-width: 480px){
  .forbes__text{ font-size: 22px; padding-left: 15%; }
  .forbes__textbox{ font-size: 0.9em; }
- .yotapanel__title{ font-size: 2em; }
- .yotapanel__videolink{ padding: 0 5%; }
- .yotapanel__videolink a{ font-size: 1.2em; }
- .yotapanel__text{ padding: 0 5%; text-align: left; }
- .yotapanel__value li p{ font-size: 1.5em; }
- .yotabattery__title{ font-size: 2em; }
- .yotabattery__videolink{ padding: 0 5%; }
- .yotabattery__videolink a{ font-size: 1.2em; }
- .yotabattery__text{ padding: 0 5%; text-align: left; }
- .yotabattery__value li p{ font-size: 1.5em; }
- .yotaread__title{ font-size: 2em; }
- .yotaread__videolink{ padding: 0 5%; }
- .yotaread__videolink a{ font-size: 1.2em; }
- .yotaread__text{ padding: 0 5%; text-align: left; }
- .yotaread__value li p{ font-size: 1.5em; }
- .yotastyles__title{ font-size: 2em; }
- .yotastyles__videolink{ padding: 0 5%; }
- .yotastyles__videolink a{ font-size: 1.2em; }
- .yotastyles__text{ padding: 0 5%; text-align: left; }
- .yotastyles__value li p{ font-size: 1.5em; } }
+ .yotabuy__price{ top: 70%; } }
+@media only screen and (max-width: 460px){
+ .yotapanel{ font-size: 0.8em; padding: 3% 0; }
+ .yotapanel__col-1, .yotapanel__col-1{ padding: 0; }
+ .yotapanel__title{ font-size: 36px; }
+ .yotapanel__text{ text-align: justify; padding-right: 0; }
+ .yotapanel__value li p{ font-size: 1.8em; }
+ .yotabattery{ font-size: 0.8em; padding: 3% 0; }
+ .yotabattery__col-1, .yotabattery__col-1{ padding: 0; }
+ .yotabattery__title{ font-size: 36px; }
+ .yotabattery__text{ text-align: justify; padding-right: 0; }
+ .yotabattery__value li p{ font-size: 1.8em; }
+ .yotaread{ font-size: 0.8em; padding: 3% 0; }
+ .yotaread__col-1, .yotaread__col-1{ padding: 0; }
+ .yotaread__title{ font-size: 36px; }
+ .yotaread__text{ text-align: justify; padding-right: 0; }
+ .yotaread__value li p{ font-size: 1.8em; }
+ .yotastyles{ font-size: 0.8em; padding: 3% 0; }
+ .yotastyles__col-1, .yotastyles__col-1{ padding: 0; }
+ .yotastyles__title{ font-size: 36px; }
+ .yotastyles__text{ text-align: justify; padding-right: 0; }
+ .yotastyles__value li p{ font-size: 1.8em; } }
 @media only screen and (max-width: 450px){
  aside{ width: 100%; padding-top: 5%; text-align: center; }
  aside ul{ padding-top: 4%; }
  aside ul li{ float: none; padding: 2% 0; border: solid 1px #797979; }
  aside .search{ float: none; margin: auto; }
- .main__img img{ width: 70%; }
- .main__title{ font-size: 2.5em; }
+ .main__title{ font-size: 2.3em; }
  .main__price{ padding: 7% 20% 0 20%; text-align: center; }
  .main__price span{ display: block; width: 100%; font-size: 2.2em; }
  .main__price button{ display: block; width: 100%; }
+ .main__address a{ font-size: 0.85em; }
  .content .products{ width: 100%; clear: both; }
  .product{ width: 100%; clear: both; } }
+@media only screen and (max-width: 430px){
+ .footer__menu li{ display: block; margin: auto; zoom: 1; }
+ .footer__menu li:after{ content: " "; display: table; clear: both; }
+ .footer__buy{ padding: 1% 5%; } }
 @media only screen and (max-width: 414px){
  .two-sides h5{ font-size: 0.9em; }
  .two-sides__text{ font-size: 1em; }
@@ -513,13 +505,14 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .two-sides__conteiner{ padding: 6% 0 0 10%; }
  .two-sides__textbox{ width: 100%; }
  .yotacare__textbox{ width: 100%; height: auto; padding-right: 0; text-align: center; } }
-@media only screen and (max-width: 380px){
- .main__address a{ font-size: 0.9em; } }
+@media only screen and (max-width: 410px){
+ .yotabuy{ background-size: 140%; } }
 @media only screen and (max-width: 350px){
  .main__text{ padding: 0; }
- .main__address a{ font-size: 0.8em; } }
+ .main__address a{ font-size: 0.75em; } }
 @media only screen and (max-width: 320px){
- .yotacare__characteristics{ font-size: 1.4em; } }
+ .yotacare__characteristics{ font-size: 1.4em; }
+ .yotabuy{ background-size: 155%; } }
 
 
 
