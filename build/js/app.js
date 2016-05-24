@@ -30,9 +30,10 @@ $(document).ready(function() {
   speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
-  prevArrow: '.slick-prev',
-  nextArrow: '.slick-next'
+  prevArrow: '.slick-left',
+  nextArrow: '.slick-right'
 	});
+
 	$('.forbes__conteiner').slick({
   dots: false,
   infinite: true,
@@ -70,6 +71,7 @@ $(document).ready(function() {
     }
   ]
 	});
+
 	$('.product__slick').slick({
   dots: true,
   infinite: true,

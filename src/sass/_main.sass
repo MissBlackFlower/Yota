@@ -137,8 +137,9 @@
     +r(780)
       padding-bottom: 10%
   &__arrows
-    .slick-prev,
-    .slick-next
+    .slick-left,
+    .slick-right
+      @extend .slick-prev
       margin-top: -26px
       height: 52px
       width: 26px
@@ -152,7 +153,8 @@
         background-image: url(../img/left_arrow.png)
         +r(360)
           display: none
-    .slick-next
+    .slick-right
+      @extend .slick-next
       &:before
         content: " "
         background-image: url(../img/right_arrow.png)
