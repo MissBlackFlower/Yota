@@ -520,9 +520,11 @@ aside .search span i { display: inline-block; background-image: url("../img/icon
  .yotacare__textbox{ width: 100%; height: auto; padding-right: 0; text-align: center; } }
 @media only screen and (max-width: 410px){
  .yotabuy{ background-size: 140%; } }
+@media only screen and (max-width: 360px){
+ .main .center{ padding: 0 2%; }
+ .main__arrows .slick-prev:before, .main__arrows .slick-next:before{ display: none; } }
 @media only screen and (max-width: 350px){
- .main__text{ padding: 0; }
- .main__address a{ font-size: 0.75em; } }
+ .main__text{ padding: 0 1%; } }
 @media only screen and (max-width: 320px){
  .yotacare__characteristics{ font-size: 1.4em; }
  .yotabuy{ background-size: 155%; } }

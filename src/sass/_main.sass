@@ -51,6 +51,10 @@
       button
         display: block
         width: 100%
+  +r(360)
+    .center
+      padding: 0 2%
+
   &__item
     padding-bottom: 1.5%
   &__img
@@ -81,7 +85,7 @@
     font-size: 16px
     line-height: 1.74
     +r(350)
-      padding: 0
+      padding: 0 1%
   &__price
     width: 100%
     float: left
@@ -121,9 +125,6 @@
     +r(450)
       a
         font-size: 0.85em
-    +r(350)
-      a
-        font-size: 0.75em
   &__icon-location
     display: inline-block
     vertical-align: middle
@@ -149,6 +150,8 @@
         content: " "
         background-color: transparent
         background-image: url(../img/left_arrow.png)
+        +r(360)
+          display: none
     .slick-next
       &:before
         content: " "
