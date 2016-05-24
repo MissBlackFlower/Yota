@@ -56,6 +56,7 @@ $(document).ready(function() {
   prevArrow: '.slick-prev',
   nextArrow: '.slick-next'
 	});
+// функция для начала проигрования видео по клику на его блок
 	$(".view").click(function(){
 		var video = document.getElementById("movie");
 		if (video.paused) {
@@ -66,13 +67,14 @@ $(document).ready(function() {
 			 video.controls= false ;
 		}
 	});
+// показывать кнопку меню при ширине окна меньше 1000
 	$('body').on('click', function(){
 		if ($(window).width() <= 1000) {
 			$('.js-header').removeClass('is-active');
 			$('.js-header-nav').slideUp(200);
 		}
 	});
-
+// открыть навигацию при клике на кнопку меню
 	$('.js-btn-menu').on('click', function(event){
 		var this_ = $(this),
 			parent = this_.parents('.js-header'),
@@ -88,19 +90,15 @@ $(document).ready(function() {
 		event.stopPropagation();
 	});
 
-	// fixed header
-	$(window).scroll(function() {
-		if ($(window).width() >= 1000) {
-			var scroll = $(window).scrollTop(),
-				nav = $('.js-header-nav'),
-				height = $('.js-header').height();
-
-			if (scroll < height) {
-				nav.removeClass('is-fixed');
-			} else {
-				nav.addClass('is-fixed');
-			}
-		}
-	});
+	$h = $('.js-header').offset().top;
+	$(window).scroll(function(){
+        // Если прокрутили скролл ниже макушки блока, включаем фиксацию
+		if ( ($(window).scrollTop() > $h) && ($(window).width() <= 1000) ) {
+        	$(".js-header").css({"position":"fixed", "top":0 , "border-bottom":"solid 2px #fff", "z-index":50});
+        }else{
+            //Иначе возвращаем всё назад. Тут вы вносите свои данные
+        	$(".js-header").css({"position":"static", "border-bottom":"none"});
+        }
+  });
 
 });

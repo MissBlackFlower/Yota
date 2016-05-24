@@ -126,6 +126,10 @@ body
 				opacity: 0
 				transform: scale(0)
 	+r(1000)
+		// position: fixed
+		// top: 0
+		// left: 0
+		z-index: 50
 		padding: 2% 0
 	+r(600)
 		padding: 3% 0
@@ -170,6 +174,8 @@ body
 				text-transform: uppercase
 				text-decoration: none
 				color: #fff
+			a:hover
+				text-decoration: underline
 		+r(1000)
 			display: none
 			width: 100%
@@ -187,6 +193,8 @@ body
 			margin-left: 0
 			width: 30%
 			margin: auto
+	&__buy:hover
+		background-color: #00aeef
 .white-line
 	width: 100%
 	float: left
@@ -194,7 +202,6 @@ body
 	height: 2px
 	border: none
 	margin: 0
-
 // footers block
 .footer
 	width: 100%
@@ -224,10 +231,14 @@ body
 		.social--#{$s}
 			float: left
 			+s(#{$s})
+		.social--#{$s}:hover
+			+s(#{$s}_color)
 	@each $s in letter,phone
 		.footer__#{$s}
 			float: left
 			+s(#{$s})
+		.footer__#{$s}:hover
+			+s(#{$s}_g)
 	&__links
 		width: 100%
 		li
@@ -278,6 +289,8 @@ body
 				text-transform: uppercase
 				text-decoration: none
 				color: #797979
+			a:hover
+				text-decoration: underline
 			+r(430)
 				display: block
 				margin: auto
@@ -288,6 +301,10 @@ body
 		border: solid 1px #797979
 		+r(430)
 			padding: 1% 5%
+	&__buy:hover
+		border-color: #fff
+		color: #fff
+		background-color: #797979
 	&__copyright
 		width: 100%
 		float: right
